@@ -1,0 +1,22 @@
+Rutas para visializar la API  en Postmas 
+
+punto 0: carrera : (GET)  http://localhost:3000/carreras
+
+punto 1 prerequisitos: (GET)  http://localhost:3000/materias/PRO001/prerrequisitos      ( en PRO001) puede cambiar a otro codigo de materia
+
+punto 2 consulta materia ciclo: (GET) http://localhost:3000/materias/2023-1    (puedes poner 2023-1  o 2023-2)
+
+
+
+punto 3: (post): http://localhost:3000/carrera-materias/inscripciones
+es atraves de body---- raw--seleccionamos json ---y utilizamos el siguiente areglo
+
+{
+    "carrera":"ING001",
+    "materias":[
+        "PRO001",
+        "MAT001",
+        "PRO002",
+        "EST002"
+    ]
+}
